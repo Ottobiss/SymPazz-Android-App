@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SymPuzz</string>
+    <string name="login_text">Войти</string>
+    <string name="username">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="regquestion">Ещё нет аккаунта?</string>
+    <string name="create">Создать</string>
+    <string name="register_text">Регистрация</string>
+    <string name="email">Почта</string>
+    <string name="dateofbirth">Дата рождения</string>
+    <string name="logquestion">Уже есть аккуаунт?</string>
+    <string name="seasonrec">Сезонные рекомендации</string>
+    <string name="test">Тестирование</string>
+    <string name="lasttesttext">Последнее тестирование</string>
+</resources>
