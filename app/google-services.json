@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "969778273711",
+    "project_id": "sympuzz-a3a11",
+    "storage_bucket": "sympuzz-a3a11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969778273711:android:4873358bab0acfcdb5a35a",
+        "android_client_info": {
+          "package_name": "com.cof.sympuzz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_D9hrY3VYpTtQV3TqAhaRxbMp12rscqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
