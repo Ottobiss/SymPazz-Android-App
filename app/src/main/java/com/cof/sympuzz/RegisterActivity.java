@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -50,6 +51,14 @@ public class RegisterActivity extends AppCompatActivity {
 
         Gender = findViewById(R.id.gender);
         Gender.clearCheck();
+
+        TextView LoginText = findViewById(R.id.singin);
+        LoginText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+            }
+        });
 
         Button ButtonRegister = findViewById(R.id.regbtn);
         ButtonRegister.setOnClickListener(new View.OnClickListener() {
