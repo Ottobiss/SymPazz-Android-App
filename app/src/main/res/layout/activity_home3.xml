@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="191dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="20dp"
+        card_view:srcCompat="@drawable/user_ic" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aqum_two"
+        android:padding="3dp"
+        android:text="@string/username"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aqum_two"
+        android:padding="3dp"
+        android:text="@string/email"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="15sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/homecardview"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_border"
+        app:cardCornerRadius="43dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <Button
+                android:id="@+id/testbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/aqum_two"
+                android:text="@string/test"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/seasonbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/darkblue"
+                android:fontFamily="@font/aqum_two"
+                android:text="@string/seasonrec"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lasttestcardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blue_border"
+                app:cardCornerRadius="43dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/orange"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:id="@+id/lasttesttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_border"
+                        android:fontFamily="@font/aqum_two"
+                        android:padding="15dp"
+                        android:text="@string/lasttesttext"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/lasttestinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aqum_two"
+                        android:padding="3dp"
+                        android:text="Тут что-то будет"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -28,10 +28,10 @@
         android:id="@+id/pill"
         android:layout_width="311dp"
         android:layout_height="55dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/sympuzz"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        card_view:srcCompat="@drawable/pill"/>
+        card_view:srcCompat="@drawable/pill" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/logcardview"
