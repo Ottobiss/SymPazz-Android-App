@@ -120,12 +120,4 @@ public class LoginActivity extends AppCompatActivity {
 
         alertDialog.show();
     }
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (authProfile.getCurrentUser() != null) {
-            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
-            finish();
-        }
-    }
 }
